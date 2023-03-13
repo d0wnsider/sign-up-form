@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.bg {
+    background: url(/images/leftimg.jpg) no-repeat;
+    background-size: 100%;
+    width: 40vw;
+}
+
+.logo {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin {
+    font-size: 50px;
+    color: white;
+}
+
+.thor {
+    width: 200px;
+    height: auto;
+}
+
+.right {
+    width: 50vw;
+    padding: 20px;
+}
+
+.form {
+    padding: 20px;
+}
