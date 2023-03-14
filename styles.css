@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap');
+
 :root {
     --submit: #596D48;
-    --input: #0054fc;
+    --input: #ed7a00;
     --bigfont: 1.5rem;
+    --elmesiri: 'El Messiri', sans-serif;
+    --regfontcol: #d8d8d8;
 }
 
 * {
-    font-family: -apple-system, BlinkMacSystemFont, "Roboto Mono", monospace, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto Mono",'El Messiri', monospace, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    /* border: 1px solid red; */
 }
 
 main {
     display: flex;
+    background-color: #000000;
+    color: white;
 }
 /* left side */
 .bg {
-    background: url(./images/leftimg.jpg) no-repeat;
+    background: url(./images/galaxy.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
     width: 40vw;
@@ -37,22 +41,24 @@ main {
 }
 
 .logo img {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
-.odin {
+.sun {
     font-size: 50px;
-    color: white;
+    color: rgb(220, 150, 100);
+    font-family: var(--elmesiri);
 }
 /* right side */
 .right {
     width: 60vw;
-    padding: 100px 50px;
+    padding: 50px 50px;
+    color: var(--regfontcol);
 }
 
 .right > p {
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: var(--bigfont);
     font-weight: bold;
 }
@@ -73,6 +79,7 @@ input {
     border: 1px solid #E5E7EB;
     border-radius: 5px;
     padding: 5px;
+    background-color: transparent;
 }
 
 input:focus {
@@ -86,18 +93,25 @@ input:focus {
 }
 
 .submit {
-    background-color: rgba(0, 102, 0, 0.541);
+    background-color: rgb(0, 0, 0);
     margin-top: 50px;
     padding: 20px 50px;
     border-radius: 10px;
     font-size: var(--bigfont);
     font-weight: bold;
-    color: white;
-    border: 0px solid #000000;
+    color: var(--regfontcol);
+    border: 1px solid #000000;
+    outline: 1px solid var(--input);
+}
+
+.submit:hover {
+    background-color: var(--input);
+    outline: 1px var(--regfontcol);
+    /* border: 0px solid #000000; */
 }
 
 a {
-    color: var(--submit);
+    color: var(--input);
     text-decoration: none;
     font-size: var(--bigfont);
 }
